@@ -11,6 +11,10 @@ let package = Package(
     ],
     targets: [
         .target(name: "SwiftUIExtensions"),
-        .testTarget(name: "Tests", dependencies: ["SwiftUIExtensions"], path: "Tests/SwiftUIExtensions")
+        .testTarget(
+            name: "SwiftUIExtensionsTests",
+            dependencies: ["SwiftUIExtensions"],
+            path: "Tests/SwiftUIExtensions"
+        )
     ]
 )
